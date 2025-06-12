@@ -1,12 +1,14 @@
 pipeline {
     agent any
+
     tools {
         nodejs "NodeJS 18"
     }
+
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Syedshakeel23/Trading-UI'
+                git 'https://github.com/betawins/Trading-UI.git'
             }
         }
         stage('Install Dependencies') {
@@ -28,6 +30,18 @@ pipeline {
             steps {
                 sh 'echo "Deploying Application..."'
             }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline completed.'
+        }
+        success {
+            echo 'Pipeline succeeded!'
+        }
+        failure {
+            echo 'Pipeline failed.'
         }
     }
 }
