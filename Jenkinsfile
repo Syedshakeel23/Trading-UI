@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "yourdockerhubusername/trading-ui"
+        IMAGE_NAME = "syed411/trading-ui"
         DOCKER_CREDENTIALS_ID = "dockerhub-creds"
     }
 
