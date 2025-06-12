@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git 'https://github.com/betawins/Trading-UI.git'
+                git 'https://github.com/Syedshakeel23/Trading-UI.git'
             }
         }
 
