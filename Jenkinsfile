@@ -12,13 +12,6 @@ pipeline {
                 git 'https://github.com/Syedshakeel23/Trading-UI.git'
             }
         }
-
-        stage('Install Dependencies') {
-            steps {
-                sh 'npm install'
-            }
-        }
-
         stage('Run Tests') {
             steps {
                 sh 'npm test || true'  // Adjust depending on test config
