@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/betawins/Trading-UI.git'
+                git 'https://github.com/Syedshakeel23/Trading-UI.git'
             }
         }
         stage('Install Dependencies') {
